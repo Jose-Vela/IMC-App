@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IMC App</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+</resources>
