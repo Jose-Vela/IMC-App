@@ -2,4 +2,6 @@
     <string name="app_name">IMC App</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="centimeters">120 cm</string>
 </resources>
