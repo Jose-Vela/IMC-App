@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         viewMale = findViewById(R.id.viewMale)
         viewFemale = findViewById(R.id.viewFemale)
         tvHeight = findViewById(R.id.tvHeight)
+        tvHeight.text = getString(R.string.centimeters, "120")
         rsHeight =  findViewById(R.id.rsHeight)
     }
 
@@ -51,7 +52,8 @@ class MainActivity : AppCompatActivity() {
         rsHeight.addOnChangeListener { _, value, _ ->
             val df = DecimalFormat("#.##")
             val result = df.format(value)
-            tvHeight.text = "$result cm"
+            val resultText = getString(R.string.centimeters, result)
+            tvHeight.text = resultText
         }
     }
 
