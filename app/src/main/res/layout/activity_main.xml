@@ -112,14 +112,15 @@
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-            
+
             <com.google.android.material.slider.RangeSlider
                 android:id="@+id/rsHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/heightSliderDescription"
                 android:stepSize="1"
                 android:valueFrom="120"
-                android:valueTo="200"/>
+                android:valueTo="200" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

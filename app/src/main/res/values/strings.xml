@@ -4,4 +4,5 @@
     <string name="female">Mujer</string>
     <string name="height">Altura</string>
     <string name="centimeters">%1$s cm</string>
+    <string name="heightSliderDescription">Slider de altura</string>
 </resources>
