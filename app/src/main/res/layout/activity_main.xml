@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_app"
     android:paddingHorizontal="16dp"
     android:paddingVertical="32dp"
-    android:background="@color/background_app"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -30,6 +30,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginBottom="8dp"
+                android:contentDescription="@string/male"
                 android:src="@drawable/ic_male"
                 app:tint="@color/white" />
 
@@ -64,6 +65,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginBottom="8dp"
+                android:contentDescription="@string/female"
                 android:src="@drawable/ic_female"
                 app:tint="@color/white" />
 
@@ -77,41 +79,41 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.cardview.widget.CardView>
-    
+
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        app:cardCornerRadius="16dp"
         app:cardBackgroundColor="@color/background_component"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/viewMale"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/viewMale">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_margin="16dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="@string/height"
                 android:textAllCaps="true"
-                android:layout_marginBottom="8dp"
-                android:textColor="@color/title_text"/>
-            
+                android:textColor="@color/title_text" />
+
             <TextView
                 android:id="@+id/tvHeight"
-                android:text="@string/centimeters"
-                android:textSize="38sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp"
-                android:textColor="@color/white"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/centimeters"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
 
             <com.google.android.material.slider.RangeSlider
                 android:id="@+id/rsHeight"
