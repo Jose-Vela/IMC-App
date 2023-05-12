@@ -121,7 +121,7 @@
                 android:id="@+id/rsHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/heightSliderDescription"
+                android:contentDescription="@string/rsHeightDescription"
                 android:stepSize="1"
                 android:valueFrom="120"
                 android:valueTo="200" />
@@ -177,12 +177,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
+                    android:contentDescription="@string/btnSubtractWeightDescription"
                     app:backgroundTint="@color/background_fab" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/btnPlustWeight"
+                    android:id="@+id/btnPlusWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/btnPlusWeightDescription"
                     app:backgroundTint="@color/background_fab" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
