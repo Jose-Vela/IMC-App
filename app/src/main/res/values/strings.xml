@@ -4,6 +4,10 @@
     <string name="female">Mujer</string>
     <string name="height">Altura</string>
     <string name="centimeters">%1$s cm</string>
-    <string name="heightSliderDescription">Slider de altura</string>
     <string name="weight">Peso</string>
+
+    <!-- Strings for contentDescriptions -->
+    <string name="rsHeightDescription">Slider de altura</string>
+    <string name="btnSubtractWeightDescription">Restar peso</string>
+    <string name="btnPlusWeightDescription">Aumentar peso</string>
 </resources>
