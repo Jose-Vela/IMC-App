@@ -178,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:contentDescription="@string/btnSubtractWeightDescription"
-                    app:backgroundTint="@color/background_fab" />
+                    app:backgroundTint="@color/background_fab"/>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusWeight"
