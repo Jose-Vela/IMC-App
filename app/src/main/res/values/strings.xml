@@ -5,9 +5,12 @@
     <string name="height">Altura</string>
     <string name="centimeters">%1$s cm</string>
     <string name="weight">Peso</string>
+    <string name="age">Edad</string>
 
     <!-- Strings for contentDescriptions -->
     <string name="rsHeightDescription">Slider de altura</string>
     <string name="btnSubtractWeightDescription">Restar peso</string>
     <string name="btnPlusWeightDescription">Aumentar peso</string>
+    <string name="btnSubtractAgeDescription">Restar Edad</string>
+    <string name="btnPlusAgeDescription">Aumentar Edad</string>
 </resources>
