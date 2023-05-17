@@ -178,14 +178,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:contentDescription="@string/btnSubtractWeightDescription"
-                    app:backgroundTint="@color/background_fab"/>
+                    android:src="@drawable/ic_subtract"
+                    app:backgroundTint="@color/background_fab"
+                    app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/btnPlusWeightDescription"
-                    app:backgroundTint="@color/background_fab" />
+                    android:src="@drawable/ic_plus"
+                    app:backgroundTint="@color/background_fab"
+                    app:tint="@color/white" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -240,14 +244,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:contentDescription="@string/btnSubtractAgeDescription"
-                    app:backgroundTint="@color/background_fab"/>
+                    android:src="@drawable/ic_subtract"
+                    app:backgroundTint="@color/background_fab"
+                    app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusAge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/btnPlusAgeDescription"
-                    app:backgroundTint="@color/background_fab" />
+                    android:src="@drawable/ic_plus"
+                    app:backgroundTint="@color/background_fab"
+                    app:tint="@color/white" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
