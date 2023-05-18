@@ -6,6 +6,7 @@
     <string name="centimeters">%1$s cm</string>
     <string name="weight">Peso</string>
     <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
 
     <!-- Strings for contentDescriptions -->
     <string name="rsHeightDescription">Slider de altura</string>
