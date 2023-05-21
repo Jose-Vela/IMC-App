@@ -2,6 +2,7 @@ package com.example.imcapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnSubtractAge: FloatingActionButton
     private lateinit var btnPlusAge: FloatingActionButton
     private lateinit var tvAge: TextView
+    private lateinit var btnCalculate: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +48,7 @@ class MainActivity : AppCompatActivity() {
         btnSubtractAge = findViewById(R.id.btnSubtractAge)
         btnPlusAge = findViewById(R.id.btnPlusAge)
         tvAge = findViewById(R.id.tvAge)
+        btnCalculate = findViewById(R.id.btnCalculate)
     }
 
     private fun initListeners() {
@@ -88,6 +91,14 @@ class MainActivity : AppCompatActivity() {
             currentAge -=1
             setAge()
         }
+
+        btnCalculate.setOnClickListener {
+            calculateIMC()
+        }
+    }
+
+    private fun calculateIMC() {
+        // Realizar el cálculo del IMC
     }
 
     private fun setAge() {
