@@ -2,6 +2,7 @@ package com.example.imcapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private var isFemaleSelected: Boolean = false
     private var currentWeight: Int = 70
     private var currentAge: Int = 30
+    private var currentHeight: Int = 120
 
     private lateinit var viewMale: CardView
     private lateinit var viewFemale: CardView
@@ -68,8 +70,8 @@ class MainActivity : AppCompatActivity() {
 
         rsHeight.addOnChangeListener { _, value, _ ->
             val df = DecimalFormat("#.##")
-            val result = df.format(value)
-            setHeight(result)
+            currentHeight = df.format(value).toInt()
+            setHeight(currentHeight.toString())
         }
 
         btnPlusWeight.setOnClickListener {
@@ -98,7 +100,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateIMC() {
-        // Realizar el cálculo del IMC
+        val imc = currentWeight / (currentHeight * currentHeight)
+        Log.i("José Vela", "El IMC es $imc")
     }
 
     private fun setAge() {
