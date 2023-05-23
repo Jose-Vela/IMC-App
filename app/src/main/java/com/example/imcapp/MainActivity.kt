@@ -1,8 +1,8 @@
 package com.example.imcapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnPlusAge: FloatingActionButton
     private lateinit var tvAge: TextView
     private lateinit var btnCalculate: Button
+
+    companion object{
+        const val IMC_KEY = "IMC_RESULT"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,8 +73,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         rsHeight.addOnChangeListener { _, value, _ ->
-            val df = DecimalFormat("#.##")
-            currentHeight = df.format(value).toInt()
+            currentHeight = value.toInt()
             setHeight(currentHeight.toString())
         }
 
@@ -95,13 +98,20 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCalculate.setOnClickListener {
-            calculateIMC()
+            navigateResult(calculateIMC())
         }
     }
 
-    private fun calculateIMC() {
-        val imc = currentWeight / (currentHeight * currentHeight)
-        Log.i("José Vela", "El IMC es $imc")
+    private fun navigateResult(result: Double) {
+        val intent = Intent(this, ResultIMCActivity::class.java)
+        intent.putExtra(IMC_KEY, result)
+        startActivity(intent)
+    }
+
+    private fun calculateIMC(): Double {
+        val df = DecimalFormat("#.##")
+        val imc = currentWeight / (currentHeight.toDouble()/100 * currentHeight.toDouble()/100)
+        return df.format(imc).toDouble()
     }
 
     private fun setAge() {

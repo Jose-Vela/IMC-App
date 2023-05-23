@@ -7,6 +7,7 @@
     <string name="weight">Peso</string>
     <string name="age">Edad</string>
     <string name="calculate">Calcular</string>
+    <string name="result">Tu resultado</string>
 
     <!-- Strings for contentDescriptions -->
     <string name="rsHeightDescription">Slider de altura</string>
