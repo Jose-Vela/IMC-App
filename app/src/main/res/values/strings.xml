@@ -7,7 +7,22 @@
     <string name="weight">Peso</string>
     <string name="age">Edad</string>
     <string name="calculate">Calcular</string>
-    <string name="result">Tu resultado</string>
+    <string name="recalculate">Re-Calcular</string>
+    <string name="result">Tu IMC es:</string>
+
+    <string name="titleUnderWeight">Bajo peso</string>
+    <string name="descriptionUnderWeight">Estás por debajo de lo óptimo para tu peso y altura.</string>
+
+    <string name="titleNormalWeight">Normal</string>
+    <string name="descriptionNormalWeight">Estás en lo óptimo para tu peso y altura.</string>
+
+    <string name="titleOverWeight">Sobrepeso</string>
+    <string name="descriptionOverWeight">Estás por encima de lo óptimo para tu peso y altura.</string>
+
+    <string name="titleObesity">Obesidad</string>
+    <string name="descriptionObesity">Estás muy por encima de lo óptimo para tu peso y altura.</string>
+
+    <string name="error">error</string>
 
     <!-- Strings for contentDescriptions -->
     <string name="rsHeightDescription">Slider de altura</string>

@@ -6,8 +6,11 @@
     <color name="background_component">#1D1E33</color>
     <color name="background_component_selected">#FF111328</color>
     <color name="background_app">#0E0B28</color>
-    <color name="background_button">#EB1555</color>
     <color name="title_text">#FF8D8E98</color>
-    <color name="background_FAB">#FF6200EE</color>
     <color name="background_fab">#5C6BC0</color>
+
+    <color name="under_weight">#FFEB3B</color>
+    <color name="normal_weight">#4CAF50</color>
+    <color name="over_weight">#FF9800</color>
+    <color name="obesity">#FF1100</color>
 </resources>
