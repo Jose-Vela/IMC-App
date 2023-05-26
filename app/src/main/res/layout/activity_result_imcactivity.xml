@@ -53,11 +53,22 @@
                 android:id="@+id/tvIMC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="64dp"
+                android:layout_marginVertical="10dp"
                 android:textSize="70sp"
                 android:textColor="@color/white"
+                app:tint="@color/under_weight"
                 android:textStyle="bold"
                 tools:text="NORMAL"/>
+
+            <ImageView
+                android:id="@+id/imgBodyType"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/imgBodyType"
+                android:layout_marginVertical="10dp"
+                android:src="@drawable/img_male_underweight"
+                app:tint="@color/white" />
 
             <TextView
                 android:id="@+id/tvDescription"
