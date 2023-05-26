@@ -9,8 +9,11 @@
     <color name="title_text">#FF8D8E98</color>
     <color name="background_fab">#5C6BC0</color>
 
-    <color name="under_weight">#FFEB3B</color>
-    <color name="normal_weight">#4CAF50</color>
-    <color name="over_weight">#FF9800</color>
-    <color name="obesity">#FF1100</color>
+    <color name="under_weight">#53C9F7</color>
+    <color name="normal_weight">#9BB50C</color>
+    <color name="over_weight">#F9C801</color>
+    <color name="obesity">#F58A20</color>
+    <color name="extreme_obesity">#F73F01</color>
+
+    <color name="error">#FF0000</color>
 </resources>

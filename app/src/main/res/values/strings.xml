@@ -13,7 +13,7 @@
     <string name="titleUnderWeight">Bajo peso</string>
     <string name="descriptionUnderWeight">Estás por debajo de lo óptimo para tu peso y altura.</string>
 
-    <string name="titleNormalWeight">Normal</string>
+    <string name="titleNormalWeight">Saludable</string>
     <string name="descriptionNormalWeight">Estás en lo óptimo para tu peso y altura.</string>
 
     <string name="titleOverWeight">Sobrepeso</string>
@@ -21,6 +21,9 @@
 
     <string name="titleObesity">Obesidad</string>
     <string name="descriptionObesity">Estás muy por encima de lo óptimo para tu peso y altura.</string>
+
+    <string name="titleExtremeObesity">Obesidad Severa</string>
+    <string name="descriptionExtremeObesity">Estás demasiado muy por encima de lo óptimo para tu peso y altura.</string>
 
     <string name="error">error</string>
 
@@ -30,4 +33,5 @@
     <string name="btnPlusWeightDescription">Aumentar peso</string>
     <string name="btnSubtractAgeDescription">Restar Edad</string>
     <string name="btnPlusAgeDescription">Aumentar Edad</string>
+    <string name="imgBodyType">Tipo de cuerpo según el IMC</string>
 </resources>
