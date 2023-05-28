@@ -44,7 +44,7 @@
                 android:id="@+id/tvResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="38sp"
+                android:textSize="36sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:textAllCaps="true"
@@ -54,7 +54,7 @@
                 android:id="@+id/tvIMC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="36sp"
+                android:textSize="34sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 tools:text="NORMAL"/>
@@ -71,7 +71,7 @@
                 android:id="@+id/tvDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:textColor="@color/white"
                 tools:text="NORMAL"/>
 
