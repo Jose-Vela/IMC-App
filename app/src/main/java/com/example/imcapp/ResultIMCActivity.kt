@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import com.example.imcapp.MainActivity.Companion.AGE_KEY
 import com.example.imcapp.MainActivity.Companion.GENDER_KEY
 import com.example.imcapp.MainActivity.Companion.IMC_KEY
 
@@ -22,8 +23,9 @@ class ResultIMCActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result_imcactivity)
         val result:Double = intent.extras?.getDouble(IMC_KEY) ?: -1.0
         val gender:String = intent.extras?.getString(GENDER_KEY) ?: ""
+        val age:Int = intent.extras?.getInt(AGE_KEY) ?: -1
         initComponents()
-        initUI(result, gender)
+        initUI(result, gender, age)
         initListeners()
     }
 
@@ -31,13 +33,13 @@ class ResultIMCActivity : AppCompatActivity() {
         btnReCalculate.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
     }
 
-    private fun initUI(result: Double, gender: String) {
+    private fun initUI(result: Double, gender: String, age: Int) {
         tvIMC.text = result.toString()
         when(result){
             in 0.00..18.50 -> { // Bajo peso
                 tvResult.text = getString(R.string.titleUnderWeight)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.under_weight))
-                tvDescription.text = getString(R.string.descriptionUnderWeight)
+                tvDescription.text = getString(R.string.descriptionUnderWeight, age.toString(), result.toString())
                 if (gender == getString(R.string.male)) imgBodyType.setImageResource(R.drawable.img_male_underweight) else imgBodyType.setImageResource(R.drawable.img_female_underweight)
                 imgBodyType.setColorFilter(ContextCompat.getColor(this, R.color.under_weight))
             }
@@ -45,7 +47,7 @@ class ResultIMCActivity : AppCompatActivity() {
             in 18.51..24.99 -> { // Saludable (Peso normal)
                 tvResult.text = getString(R.string.titleNormalWeight)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.normal_weight))
-                tvDescription.text = getString(R.string.descriptionNormalWeight)
+                tvDescription.text = getString(R.string.descriptionNormalWeight, age.toString(), result.toString())
                 if (gender == getString(R.string.male)) imgBodyType.setImageResource(R.drawable.img_male_normal_weight) else imgBodyType.setImageResource(R.drawable.img_female_normal_weight)
                 imgBodyType.setColorFilter(ContextCompat.getColor(this, R.color.normal_weight))
             }
@@ -53,7 +55,7 @@ class ResultIMCActivity : AppCompatActivity() {
             in 25.00..29.99 -> { // Sobrepeso
                 tvResult.text = getString(R.string.titleOverWeight)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.over_weight))
-                tvDescription.text = getString(R.string.descriptionOverWeight)
+                tvDescription.text = getString(R.string.descriptionOverWeight, age.toString(), result.toString())
                 if (gender == getString(R.string.male)) imgBodyType.setImageResource(R.drawable.img_male_overweight) else imgBodyType.setImageResource(R.drawable.img_female_overweight)
                 imgBodyType.setColorFilter(ContextCompat.getColor(this, R.color.over_weight))
             }
@@ -61,7 +63,7 @@ class ResultIMCActivity : AppCompatActivity() {
             in 30.00..39.99 -> { // Obecidad
                 tvResult.text = getString(R.string.titleObesity)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.obesity))
-                tvDescription.text = getString(R.string.descriptionObesity)
+                tvDescription.text = getString(R.string.descriptionObesity, age.toString(), result.toString())
                 if (gender == getString(R.string.male)) imgBodyType.setImageResource(R.drawable.img_male_obesity) else imgBodyType.setImageResource(R.drawable.img_female_obesity)
                 imgBodyType.setColorFilter(ContextCompat.getColor(this, R.color.obesity))
             }
@@ -69,7 +71,7 @@ class ResultIMCActivity : AppCompatActivity() {
             in 40.00..99.99 -> { // Obecidad Severa
                 tvResult.text = getString(R.string.titleExtremeObesity)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.extreme_obesity))
-                tvDescription.text = getString(R.string.descriptionExtremeObesity)
+                tvDescription.text = getString(R.string.descriptionExtremeObesity, age.toString(), result.toString())
                 if (gender == getString(R.string.male)) imgBodyType.setImageResource(R.drawable.img_male_extreme_obesity) else imgBodyType.setImageResource(R.drawable.img_female_extreme_obesity)
                 imgBodyType.setColorFilter(ContextCompat.getColor(this, R.color.extreme_obesity))
             }

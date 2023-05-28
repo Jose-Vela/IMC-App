@@ -3,7 +3,6 @@ package com.example.imcapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -38,6 +37,7 @@ class MainActivity : AppCompatActivity() {
     companion object{
         const val IMC_KEY = "IMC_RESULT"
         const val GENDER_KEY = "SELECTED_GENDER"
+        const val AGE_KEY = "SELECTED_AGE"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -106,14 +106,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCalculate.setOnClickListener {
-            navigateResult(calculateIMC(), gender)
+            navigateResult(calculateIMC())
         }
     }
 
-    private fun navigateResult(result: Double, gender: String) {
+    private fun navigateResult(result: Double) {
         val intent = Intent(this, ResultIMCActivity::class.java)
         intent.putExtra(IMC_KEY, result)
         intent.putExtra(GENDER_KEY, gender)
+        intent.putExtra(AGE_KEY, currentAge)
         startActivity(intent)
     }
 

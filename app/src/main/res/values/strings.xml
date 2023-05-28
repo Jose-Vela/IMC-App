@@ -11,19 +11,19 @@
     <string name="result">Tu IMC es:</string>
 
     <string name="titleUnderWeight">Bajo peso</string>
-    <string name="descriptionUnderWeight">Estás por debajo de lo óptimo para tu peso y altura.</string>
+    <string name="descriptionUnderWeight">Con %1s años de edad y un IMC de %2s, estás por debajo de lo óptimo para tu peso y altura.</string>
 
     <string name="titleNormalWeight">Saludable</string>
-    <string name="descriptionNormalWeight">Estás en lo óptimo para tu peso y altura.</string>
+    <string name="descriptionNormalWeight">Con %1s años de edad y un IMC de %2s, estás en lo óptimo para tu peso y altura.</string>
 
     <string name="titleOverWeight">Sobrepeso</string>
-    <string name="descriptionOverWeight">Estás por encima de lo óptimo para tu peso y altura.</string>
+    <string name="descriptionOverWeight">Con %1s años de edad y un IMC de %2s, estás por encima de lo óptimo para tu peso y altura.</string>
 
     <string name="titleObesity">Obesidad</string>
-    <string name="descriptionObesity">Estás muy por encima de lo óptimo para tu peso y altura.</string>
+    <string name="descriptionObesity">Con %1s años de edad y un IMC de %2s, estás muy por encima de lo óptimo para tu peso y altura.</string>
 
     <string name="titleExtremeObesity">Obesidad Severa</string>
-    <string name="descriptionExtremeObesity">Estás demasiado muy por encima de lo óptimo para tu peso y altura.</string>
+    <string name="descriptionExtremeObesity">Con %1s años de edad y un IMC de %2s, estás demasiado muy por encima de lo óptimo para tu peso y altura.</string>
 
     <string name="error">error</string>
 
