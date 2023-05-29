@@ -13,3 +13,8 @@ Es una de las prácticas propuestas en el curso de [ANDROID CON KOTLIN de Aristi
   - Linear Layout
 
 ## Funcionalidad 
+La app está compuesta por dos vistas:
+
+  1. __Vista principal:__ Muestra los controles para seleccionar el __*GÉNERO (HOMBRE o MUJER), ALTURA, PESO Y EDAD*__, de lo cúal dependerá nuestro resultado.
+
+  2. __Vista resultado de IMC:__ Muestra el resultado del cálculo del __IMC__.
